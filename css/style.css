@@ -27,6 +27,22 @@ html{
     scroll-behavior: smooth;
 }
 
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    border-radius: .5rem;
+    background: var(--light-yellow);
+    color: var(--black);
+    font-size:1.7rem ;
+    font-weight: 500;
+    cursor: pointer;
+    padding: .8rem 3rem ;
+}
+
+.btn:hover{
+    background: var(--yellow);
+}
+
 .header{
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -56,4 +72,113 @@ html{
 
 .header .navbar a:hover{
     color: var(--yellow);
+}
+.header .btn{
+    margin-top: 0;
+}
+
+.header #login-btn i{
+    font-size: 2.5rem;
+    color: var(--light-color);
+    cursor: pointer;
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*media queries*/
+@media(max-width:991px){
+    html{
+        font-size: 55%;
+    }
+    .header{
+        padding: 2rem;
+    }
+}
+
+@media(max-width:768px){
+    .header #login-btn i{
+        display: block;
+    }
+
+    .header #login-btn .btn{
+        display: none;
+    }
+
+    .header .navbar{
+        position: absolute;
+        top: 99%; left: 0; right:0 ;
+        border-top: var(--border);
+        background: #fff;
+    }
+
+    .header .navbar a{
+        display: block;
+        margin: 2rem;
+        font-size: 2rem;
+    }
+}
+
+
+
+@media(max-width:450px){
+    html{
+        font-size: 50%;
+    }
 }
