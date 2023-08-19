@@ -84,7 +84,12 @@ html{
     display: none;
 }
 
-
+#menu-btn{
+    font-size: 2.5rem;
+    color: var(--light-color);
+    cursor: pointer;
+    display: none;
+}
 
 
 
@@ -153,6 +158,12 @@ html{
 }
 
 @media(max-width:768px){
+
+    #menu-btn{
+        display: block;
+    }
+
+
     .header #login-btn i{
         display: block;
     }
@@ -166,6 +177,7 @@ html{
         top: 99%; left: 0; right:0 ;
         border-top: var(--border);
         background: #fff;
+        clip-path: polygon(0 0, 100% 0 ,100% 0 , 0 0);
     }
 
     .header .navbar a{
