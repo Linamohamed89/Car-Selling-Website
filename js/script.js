@@ -19,6 +19,8 @@ document.querySelector('.close-login-form').oneclick = () =>{
     document.querySelector('.login-form-container').classList.remove('active');
 }
 
+
+
 window.onscroll = () =>{
 
 
@@ -32,6 +34,30 @@ window.onscroll = () =>{
 }
 
 
+
+
+document.querySelector('.home').onmousemove = (e) =>{
+
+    document.querySelectorAll('.home-parallax').forEach(elm =>{
+
+        let speed = elm.getAttribute('data-speed');
+
+        let x = (window.innerWidth - e.pageX * speed) / 90;
+        let y = (window.innerHeight - e.pageY * speed) / 90;
+
+        elm.computedStyleMap.transform = 'translateX(${y}px) translateX(${y}px)';
+    });
+};
+
+
+
+document.querySelector('.home').onmouseleave = () =>{
+
+    document.querySelectorAll('.home-parallax').forEach(elm =>{
+
+        elm.computedStyleMap.transform = 'translateX(0px) translateX(0px)';
+    });
+};
 
 window.onload = () =>{
 

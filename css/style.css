@@ -27,6 +27,10 @@ html{
     scroll-behavior: smooth;
 }
 
+
+section {
+padding: 2rem 9%;
+ }
 .btn{
     display: inline-block;
     margin-top: 1rem;
@@ -181,9 +185,22 @@ html{
 }
 
 
+.home{
+    padding-top: 10rem;
+    text-align: center;
+    overflow: hidden;
+}
 
+.home h1{
+    font-size: 7.5vw;
+    text-transform: uppercase;
+    color: var(--black);
+} 
 
-
+.home img {
+    width: 100%;
+    margin: 1rem 0;
+}
 
 
 
@@ -236,6 +253,10 @@ html{
     .header.active{
         padding: 2rem ;
     }
+
+    section {
+        padding: 2rem ;
+         }
 }
 
 @media(max-width:768px){
